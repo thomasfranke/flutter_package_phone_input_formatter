@@ -1,10 +1,8 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
-
 import '/exports.dart';
 
 class PhoneInput extends StatefulWidget {
-  final ValueChanged<PhoneNumber>? onChanged;
+  final ValueChanged<PhoneNumberModel>? onChanged;
   final ValueChanged<Country>? onCountryChanged;
   final bool enabled;
   final String? initialValue;
@@ -87,6 +85,36 @@ class _PhoneInputState extends State<PhoneInput> {
     }
   }
 
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      autofillHints: widget.disableAutoFillHints ? null : [AutofillHints.telephoneNumberNational],
+      cursorColor: widget.cursorColor,
+      enabled: widget.enabled,
+      initialValue: number,
+      keyboardType: TextInputType.phone,
+      style: widget.style,
+      onChanged: (value) {
+        final phoneNumber = PhoneNumberModel(countryISOCode: _selectedCountry.code, countryCode: '+${_selectedCountry.fullCountryCode}', number: value);
+        setState(() => validatedNumber = Parsers().phoneValidator(phoneNumber.completeNumber));
+        log(Parsers().phoneParser(phoneNumber.completeNumber));
+        widget.onChanged?.call(phoneNumber);
+      },
+      decoration: InputDecoration(
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8.0),
+          borderSide: BorderSide(color: validatedNumber ? Colors.green : Colors.redAccent, width: 3.0),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8.0),
+          borderSide: BorderSide(color: validatedNumber ? Colors.green : Colors.redAccent, width: 3.0),
+        ),
+        prefixIcon: _prefixFlagsButton(),
+        counterText: !widget.enabled ? '' : null,
+      ),
+    );
+  }
+
   Future<void> _changeCountry() async {
     filteredCountries = _countryList;
     await showDialog(
@@ -109,36 +137,6 @@ class _PhoneInputState extends State<PhoneInput> {
       ),
     );
     if (mounted) setState(() {});
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return TextFormField(
-      autofillHints: widget.disableAutoFillHints ? null : [AutofillHints.telephoneNumberNational],
-      cursorColor: widget.cursorColor,
-      enabled: widget.enabled,
-      initialValue: number,
-      keyboardType: TextInputType.phone,
-      style: widget.style,
-      onChanged: (value) {
-        final phoneNumber = PhoneNumber(countryISOCode: _selectedCountry.code, countryCode: '+${_selectedCountry.fullCountryCode}', number: value);
-        setState(() => validatedNumber = Parsers().phoneValidator(phoneNumber.completeNumber));
-        log(Parsers().phoneParser(phoneNumber.completeNumber));
-        widget.onChanged?.call(phoneNumber);
-      },
-      decoration: InputDecoration(
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8.0),
-          borderSide: BorderSide(color: validatedNumber ? Colors.green : Colors.redAccent, width: 3.0),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8.0),
-          borderSide: BorderSide(color: validatedNumber ? Colors.green : Colors.redAccent, width: 3.0),
-        ),
-        prefixIcon: _prefixFlagsButton(),
-        counterText: !widget.enabled ? '' : null,
-      ),
-    );
   }
 
   Container _prefixFlagsButton() {
