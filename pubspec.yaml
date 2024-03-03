@@ -1,0 +1,23 @@
+name: phone_input_formatter
+description: A customised Flutter TextFormField to input international phone number along with country code.
+version: 1.0.0
+publish_to: 'none'
+homepage: 
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  phone_numbers_parser: ^8.2.1
+
+dev_dependencies:
+  flutter_lints: ^3.0.1
+  flutter_test:
+    sdk: flutter
+  test: ^1.0.0
+
+flutter:
+  assets:
+    - assets/flags/
