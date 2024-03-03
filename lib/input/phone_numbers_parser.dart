@@ -1,5 +1,4 @@
 import 'dart:developer';
-
 import 'package:phone_input_formatter/helpers/country_codes.dart';
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 
@@ -10,9 +9,7 @@ class Parsers {
   }
 
   bool phoneValidator(String phone) {
-    final phoneNumber = PhoneNumber.parse(
-      phone,
-    );
+    final phoneNumber = PhoneNumber.parse(phone);
     return phoneNumber.isValid();
   }
 

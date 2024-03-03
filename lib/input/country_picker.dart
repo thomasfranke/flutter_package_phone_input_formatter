@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import '/exports.dart';
 
-class PickerDialogStyle {
+class CountryPicker {
   final Color? backgroundColor;
   final TextStyle? countryCodeStyle;
   final TextStyle? countryNameStyle;
@@ -14,7 +14,7 @@ class PickerDialogStyle {
   final EdgeInsets? searchFieldPadding;
   final double? width;
 
-  PickerDialogStyle({
+  CountryPicker({
     this.backgroundColor,
     this.countryCodeStyle,
     this.countryNameStyle,
@@ -34,7 +34,7 @@ class CountryPickerDialog extends StatefulWidget {
   final ValueChanged<Country> onCountryChanged;
   final String searchText;
   final List<Country> filteredCountries;
-  final PickerDialogStyle? style;
+  final CountryPicker? style;
   final String languageCode;
 
   const CountryPickerDialog({
@@ -60,10 +60,7 @@ class _CountryPickerDialogState extends State<CountryPickerDialog> {
   @override
   void initState() {
     _selectedCountry = widget.selectedCountry;
-    _filteredCountries = widget.filteredCountries.toList()
-      ..sort(
-        (a, b) => a.localizedName(widget.languageCode).compareTo(b.localizedName(widget.languageCode)),
-      );
+    _filteredCountries = widget.filteredCountries.toList()..sort((a, b) => a.localizedName(widget.languageCode).compareTo(b.localizedName(widget.languageCode)));
 
     super.initState();
   }
