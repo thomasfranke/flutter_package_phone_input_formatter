@@ -12,7 +12,6 @@ class PhoneInput extends StatefulWidget {
   final InputDecoration decoration;
   final TextStyle? style;
   final bool showDropdownIcon;
-  final BoxDecoration dropdownDecoration;
   final TextStyle? dropdownTextStyle;
   final IconPosition dropdownIconPosition;
   final Icon dropdownIcon;
@@ -21,7 +20,6 @@ class PhoneInput extends StatefulWidget {
   final Color cursorColor;
   final EdgeInsetsGeometry flagsButtonPadding;
   final CountryPicker? countryPicker;
-  final EdgeInsets flagsButtonMargin;
   final bool disableAutoFillHints;
 
   const PhoneInput({
@@ -37,7 +35,6 @@ class PhoneInput extends StatefulWidget {
     this.countries,
     this.onCountryChanged,
     this.showDropdownIcon = true,
-    this.dropdownDecoration = const BoxDecoration(),
     this.enabled = true,
     this.dropdownIconPosition = IconPosition.leading,
     this.dropdownIcon = const Icon(Icons.arrow_drop_down, color: Colors.white),
@@ -46,7 +43,6 @@ class PhoneInput extends StatefulWidget {
     this.flagsButtonPadding = EdgeInsets.zero,
     this.invalidNumberMessage = 'Invalid Mobile Number',
     this.countryPicker,
-    this.flagsButtonMargin = EdgeInsets.zero,
   });
 
   @override
@@ -87,30 +83,33 @@ class _PhoneInputState extends State<PhoneInput> {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      autofillHints: widget.disableAutoFillHints ? null : [AutofillHints.telephoneNumberNational],
-      cursorColor: widget.cursorColor,
-      enabled: widget.enabled,
-      initialValue: number,
-      keyboardType: TextInputType.phone,
-      style: widget.style,
-      onChanged: (value) {
-        final phoneNumber = PhoneNumberModel(countryISOCode: _selectedCountry.code, countryCode: '+${_selectedCountry.fullCountryCode}', number: value);
-        setState(() => validatedNumber = Parsers().phoneValidator(phoneNumber.completeNumber));
-        log(Parsers().phoneParser(phoneNumber.completeNumber));
-        widget.onChanged?.call(phoneNumber);
-      },
-      decoration: InputDecoration(
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8.0),
-          borderSide: BorderSide(color: validatedNumber ? Colors.green : Colors.redAccent, width: 3.0),
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: TextFormField(
+        autofillHints: widget.disableAutoFillHints ? null : [AutofillHints.telephoneNumberNational],
+        cursorColor: widget.cursorColor,
+        enabled: widget.enabled,
+        initialValue: number,
+        keyboardType: TextInputType.phone,
+        style: const TextStyle(color: Colors.white, fontSize: 16),
+        onChanged: (value) {
+          final phoneNumber = PhoneNumberModel(countryISOCode: _selectedCountry.code, countryCode: '+${_selectedCountry.fullCountryCode}', number: value);
+          setState(() => validatedNumber = Parsers().phoneValidator(phoneNumber.completeNumber));
+          // log(Parsers().phoneParser(phoneNumber.completeNumber));
+          widget.onChanged?.call(phoneNumber);
+        },
+        decoration: InputDecoration(
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(8.0),
+            borderSide: BorderSide(color: validatedNumber ? Colors.green : Colors.red, width: 1.0),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(8.0),
+            borderSide: BorderSide(color: validatedNumber ? Colors.green : Colors.red, width: 2.0),
+          ),
+          prefixIcon: _prefixFlagsButton(),
+          counterText: !widget.enabled ? '' : null,
         ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8.0),
-          borderSide: BorderSide(color: validatedNumber ? Colors.green : Colors.redAccent, width: 3.0),
-        ),
-        prefixIcon: _prefixFlagsButton(),
-        counterText: !widget.enabled ? '' : null,
       ),
     );
   }
@@ -141,35 +140,28 @@ class _PhoneInputState extends State<PhoneInput> {
 
   Container _prefixFlagsButton() {
     return Container(
-      margin: widget.flagsButtonMargin,
+      margin: const EdgeInsets.all(0.0),
       child: DecoratedBox(
-        decoration: widget.dropdownDecoration,
+        decoration: const BoxDecoration(),
         child: InkWell(
-          borderRadius: widget.dropdownDecoration.borderRadius as BorderRadius?,
           onTap: widget.enabled ? _changeCountry : null,
-          child: Padding(
-            padding: widget.flagsButtonPadding,
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const SizedBox(width: 4),
-                if (widget.enabled && widget.showDropdownIcon && widget.dropdownIconPosition == IconPosition.leading) ...[
-                  widget.dropdownIcon,
-                  const SizedBox(width: 4)
-                ],
-                if (widget.showCountryFlag) ...[
-                  Text(_selectedCountry.flag, style: const TextStyle(fontSize: 18)),
-                  const SizedBox(width: 8),
-                ],
-                FittedBox(child: Text('+${_selectedCountry.dialCode}', style: widget.dropdownTextStyle)),
-                if (widget.enabled && widget.showDropdownIcon && widget.dropdownIconPosition == IconPosition.trailing) ...[
-                  const SizedBox(width: 4),
-                  widget.dropdownIcon,
-                ],
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const SizedBox(width: 16),
+              // if (widget.enabled && widget.showDropdownIcon && widget.dropdownIconPosition == IconPosition.leading) ...[widget.dropdownIcon, const SizedBox(width: 4)],
+              if (widget.showCountryFlag) ...[
+                Text(_selectedCountry.flag, style: const TextStyle(fontSize: 25)),
                 const SizedBox(width: 8),
               ],
-            ),
+              // FittedBox(child: Text('+${_selectedCountry.dialCode}', style: widget.dropdownTextStyle)),
+              // if (widget.enabled && widget.showDropdownIcon && widget.dropdownIconPosition == IconPosition.trailing) ...[
+              // const SizedBox(width: 4),
+              // widget.dropdownIcon,
+              // ],
+              const SizedBox(width: 8),
+            ],
           ),
         ),
       ),
