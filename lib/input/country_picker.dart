@@ -107,7 +107,7 @@ class _CountryPickerDialogState extends State<CountryPickerDialog> {
                     ListTile(
                       leading: kIsWeb
                           ? Image.asset(
-                              'assets/flags/${_filteredCountries[index].code.toLowerCase()}.png',
+                              'assets/flags/${_filteredCountries[index].codeIso.toLowerCase()}.png',
                               package: 'intl_phone_field',
                               width: 32,
                             )

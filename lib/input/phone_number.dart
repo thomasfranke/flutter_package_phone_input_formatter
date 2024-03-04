@@ -30,7 +30,7 @@ class PhoneNumberModel {
       } else {
         number = completeNumber.substring(country.dialCode.length + country.regionCode.length);
       }
-      return PhoneNumberModel(countryISOCode: country.code, countryCode: country.dialCode + country.regionCode, number: number);
+      return PhoneNumberModel(countryISOCode: country.codeIso, countryCode: country.dialCode + country.regionCode, number: number);
     } on InvalidCharactersException {
       rethrow;
       // ignore: unused_catch_clause

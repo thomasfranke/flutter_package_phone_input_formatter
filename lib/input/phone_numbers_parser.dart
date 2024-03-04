@@ -1,18 +1,19 @@
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 import '/exports.dart';
 
-class Parsers {
-  String phoneParser(String phone) {
+class PhoneNumberParser {
+  static String phoneParser(String phone) {
     final phoneNumber = PhoneNumber.parse(phone);
     return phoneNumber.formatNsn();
   }
 
-  bool phoneValidator(String phone) {
+  static bool phoneValidator(String phone) {
+    log('validating phone: $phone');
     final phoneNumber = PhoneNumber.parse(phone);
     return phoneNumber.isValid();
   }
 
-  String phoneIsoCode(String phone) {
+  static String phoneIsoCode(String phone) {
     final phoneNumber = PhoneNumber.parse(phone);
 
     inspect(phoneNumber.isoCode);
