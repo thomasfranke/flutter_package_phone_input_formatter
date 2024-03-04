@@ -9,7 +9,6 @@ class PhoneInput extends StatefulWidget {
   final String? initialValue;
   final String languageCode;
   final String initialCountryCode;
-  final List<Country>? countries;
   final String? invalidNumberMessage;
   final Color cursorColor;
   final CountryPicker? countryPicker;
@@ -22,7 +21,6 @@ class PhoneInput extends StatefulWidget {
     this.disableAutoFillHints = false,
     this.initialValue,
     required this.onChanged,
-    this.countries,
     required this.onCountryChanged,
     this.enabled = true,
     this.cursorColor = Colors.white,
@@ -36,20 +34,16 @@ class PhoneInput extends StatefulWidget {
 }
 
 class _PhoneInputState extends State<PhoneInput> {
-  late List<Country> _countryList;
   late Country _selectedCountry;
-  late List<Country> filteredCountries;
   late String number;
   late bool validatedNumber;
 
   @override
   void initState() {
     super.initState();
-    _countryList = widget.countries ?? countries;
-    filteredCountries = _countryList;
-    number = widget.initialValue ?? '';
 
-    _selectedCountry = _countryList.firstWhere((item) => item.isoCode == (widget.initialCountryCode), orElse: () => _countryList.first);
+    number = widget.initialValue ?? '';
+    _selectedCountry = countries.firstWhere((item) => item.isoCode == (widget.initialCountryCode), orElse: () => countries.first);
 
     if (number.startsWith('+')) {
       number = number.replaceFirst(RegExp("^\\+${_selectedCountry.fullCountryCode}"), "");
@@ -58,21 +52,14 @@ class _PhoneInputState extends State<PhoneInput> {
     }
 
     validatedNumber = PhoneNumberParser.phoneValidator(_selectedCountry.dialCode + number);
-    // validatedNumber = false;
   }
 
   @override
   Widget build(BuildContext context) {
-    // if (firstLoad) {
-    //   _selectedCountry = _countryList.firstWhere((item) => item.isoCode == (widget.initialCountryCode), orElse: () => _countryList.first);
-    //   firstLoad = false;
-    // }
-    // _selectedCountry = _countryList.firstWhere((item) => item.isoCode == (widget.initialCountryCode), orElse: () => _countryList.first);
     return Padding(
       padding: const EdgeInsets.all(10.0),
       child: TextFormField(
         key: widget.uniqueKey,
-        // initialValue: number,
         initialValue: widget.initialValue ?? '',
         autofillHints: widget.disableAutoFillHints ? null : [AutofillHints.telephoneNumberNational],
         onChanged: (value) {
@@ -87,6 +74,13 @@ class _PhoneInputState extends State<PhoneInput> {
         decoration: InputDecoration(
           labelText: "Phone Number",
           labelStyle: const TextStyle(color: Colors.white, fontSize: 14),
+          disabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(8.0),
+            borderSide: BorderSide(
+              color: const Color(0xffe9e9e9).withOpacity(0.1),
+              width: 0.4,
+            ),
+          ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8.0),
             borderSide: BorderSide(color: validatedNumber ? Colors.green : Colors.red, width: 1.0),
@@ -103,7 +97,7 @@ class _PhoneInputState extends State<PhoneInput> {
   }
 
   Future<void> _changeCountry() async {
-    filteredCountries = _countryList;
+    // filteredCountries = _countryList;
     await showDialog(
       context: context,
       useRootNavigator: false,
@@ -111,9 +105,9 @@ class _PhoneInputState extends State<PhoneInput> {
         builder: (ctx, setState) => CountryPickerDialog(
           languageCode: widget.languageCode.toLowerCase(),
           style: widget.countryPicker,
-          filteredCountries: filteredCountries,
+          filteredCountries: countries,
           searchText: "Search Country",
-          countryList: _countryList,
+          countryList: countries,
           selectedCountry: _selectedCountry,
           onCountryChanged: (Country country) {
             _selectedCountry = country;
@@ -127,10 +121,8 @@ class _PhoneInputState extends State<PhoneInput> {
   }
 
   InkWell _prefixFlagsButton() {
-    if (!widget.enabled) {
-      // This updates thorugh block. Otherwise doens't update the Widget that actually changed the country.
-      _selectedCountry = _countryList.firstWhere((item) => item.isoCode == (widget.initialCountryCode), orElse: () => _countryList.first);
-    }
+    // This updates thorugh block. Otherwise doens't update the Widget that actually changed the country.
+    if (!widget.enabled) _selectedCountry = countries.firstWhere((item) => item.isoCode == (widget.initialCountryCode), orElse: () => countries.first);
 
     return InkWell(
       onTap: widget.enabled ? _changeCountry : null,
