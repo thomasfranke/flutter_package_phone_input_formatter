@@ -57,7 +57,7 @@ class _PhoneInputState extends State<PhoneInput> {
       // remove country code from the initial number value
       number = number.replaceFirst(RegExp("^${_selectedCountry.fullCountryCode}"), "");
     } else {
-      _selectedCountry = _countryList.firstWhere((item) => item.codeIso == (widget.initialCountryCode ?? 'US'), orElse: () => _countryList.first);
+      _selectedCountry = _countryList.firstWhere((item) => item.isoCode == (widget.initialCountryCode ?? 'US'), orElse: () => _countryList.first);
 
       // remove country code from the initial number value
       if (number.startsWith('+')) {
@@ -74,7 +74,7 @@ class _PhoneInputState extends State<PhoneInput> {
   }
 
   void _textChangedListener() {
-    final phoneNumber = PhoneNumberModel(countryISOCode: _selectedCountry.codeIso, countryCode: '+${_selectedCountry.fullCountryCode}', number: _controller.text);
+    final phoneNumber = PhoneNumberModel(isoCode: _selectedCountry.isoCode, dialCode: '+${_selectedCountry.fullCountryCode}', number: _controller.text);
     String displayNumber = PhoneNumberParser.phoneParser(phoneNumber.completeNumber);
     print("controller: ${_controller.text}");
     print("displayNumber: $displayNumber");

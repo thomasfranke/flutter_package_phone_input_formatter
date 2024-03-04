@@ -49,7 +49,6 @@ class CountryPickerDialog extends StatefulWidget {
   });
 
   @override
-  // _CountryPickerDialogState createState() => _CountryPickerDialogState();
   State<CountryPickerDialog> createState() => _CountryPickerDialogState();
 }
 
@@ -107,7 +106,7 @@ class _CountryPickerDialogState extends State<CountryPickerDialog> {
                     ListTile(
                       leading: kIsWeb
                           ? Image.asset(
-                              'assets/flags/${_filteredCountries[index].codeIso.toLowerCase()}.png',
+                              'assets/flags/${_filteredCountries[index].isoCode.toLowerCase()}.png',
                               package: 'intl_phone_field',
                               width: 32,
                             )

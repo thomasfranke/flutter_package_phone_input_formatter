@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '/exports.dart';
 
 class PhoneInput extends StatefulWidget {
+  final Key uniqueKey;
   final ValueChanged<PhoneNumberModel> onChanged;
   final ValueChanged<Country> onCountryChanged;
   final bool enabled;
@@ -27,6 +28,7 @@ class PhoneInput extends StatefulWidget {
     this.cursorColor = Colors.white,
     this.invalidNumberMessage = 'Invalid Mobile Number',
     this.countryPicker,
+    required this.uniqueKey,
   });
 
   @override
@@ -46,40 +48,35 @@ class _PhoneInputState extends State<PhoneInput> {
     _countryList = widget.countries ?? countries;
     filteredCountries = _countryList;
     number = widget.initialValue ?? '';
-    // if (widget.initialCountryCode == null && number.startsWith('+')) {
-    //   number = number.substring(1);
-    //   _selectedCountry = countries.firstWhere((country) => number.startsWith(country.fullCountryCode), orElse: () => _countryList.first);
 
-    //   // remove country code from the initial number value
-    //   number = number.replaceFirst(RegExp("^${_selectedCountry.fullCountryCode}"), "");
-    // } else {
-    log('procurando ${widget.initialCountryCode}');
-    _selectedCountry = _countryList.firstWhere((item) {
-      return item.codeIso == (widget.initialCountryCode);
-    }, orElse: () => _countryList.first);
+    _selectedCountry = _countryList.firstWhere((item) => item.isoCode == (widget.initialCountryCode), orElse: () => _countryList.first);
 
-    log('encontrou ${_selectedCountry.name}');
-    // remove country code from the initial number value
-    // if (number.startsWith('+')) {
-    // number = number.replaceFirst(RegExp("^\\+${_selectedCountry.fullCountryCode}"), "");
-    // } else {
-    // number = number.replaceFirst(RegExp("^${_selectedCountry.fullCountryCode}"), "");
-    // }
-    // }
+    if (number.startsWith('+')) {
+      number = number.replaceFirst(RegExp("^\\+${_selectedCountry.fullCountryCode}"), "");
+    } else {
+      number = number.replaceFirst(RegExp("^${_selectedCountry.fullCountryCode}"), "");
+    }
+
     validatedNumber = PhoneNumberParser.phoneValidator(_selectedCountry.dialCode + number);
     // validatedNumber = false;
   }
 
   @override
   Widget build(BuildContext context) {
+    // if (firstLoad) {
+    //   _selectedCountry = _countryList.firstWhere((item) => item.isoCode == (widget.initialCountryCode), orElse: () => _countryList.first);
+    //   firstLoad = false;
+    // }
+    // _selectedCountry = _countryList.firstWhere((item) => item.isoCode == (widget.initialCountryCode), orElse: () => _countryList.first);
     return Padding(
       padding: const EdgeInsets.all(10.0),
       child: TextFormField(
-        initialValue: number,
+        key: widget.uniqueKey,
+        // initialValue: number,
+        initialValue: widget.initialValue ?? '',
         autofillHints: widget.disableAutoFillHints ? null : [AutofillHints.telephoneNumberNational],
         onChanged: (value) {
-          final phoneNumber = PhoneNumberModel(countryISOCode: _selectedCountry.codeIso, countryCode: '+${_selectedCountry.fullCountryCode}', number: value);
-          // String displayNumber = PhoneNumberParser.phoneParser(phoneNumber.completeNumber);
+          final phoneNumber = PhoneNumberModel(isoCode: _selectedCountry.isoCode, dialCode: '+${_selectedCountry.fullCountryCode}', number: value);
           setState(() => validatedNumber = PhoneNumberParser.phoneValidator(phoneNumber.completeNumber));
           widget.onChanged.call(phoneNumber);
         },
@@ -88,6 +85,8 @@ class _PhoneInputState extends State<PhoneInput> {
         keyboardType: TextInputType.phone,
         style: const TextStyle(color: Colors.white, fontSize: 16),
         decoration: InputDecoration(
+          labelText: "Phone Number",
+          labelStyle: const TextStyle(color: Colors.white, fontSize: 14),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8.0),
             borderSide: BorderSide(color: validatedNumber ? Colors.green : Colors.red, width: 1.0),
@@ -127,32 +126,28 @@ class _PhoneInputState extends State<PhoneInput> {
     if (mounted) setState(() {});
   }
 
-  Container _prefixFlagsButton() {
-    return Container(
-      margin: const EdgeInsets.all(0.0),
-      child: DecoratedBox(
-        decoration: const BoxDecoration(),
-        child: InkWell(
-          onTap: widget.enabled ? _changeCountry : null,
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const SizedBox(width: 16),
-              // if (widget.enabled && widget.showDropdownIcon && widget.dropdownIconPosition == IconPosition.leading) ...[Icon(Icons.arrow_drop_down, color: Colors.white), const SizedBox(width: 4)],
+  InkWell _prefixFlagsButton() {
+    if (!widget.enabled) {
+      // This updates thorugh block. Otherwise doens't update the Widget that actually changed the country.
+      _selectedCountry = _countryList.firstWhere((item) => item.isoCode == (widget.initialCountryCode), orElse: () => _countryList.first);
+    }
 
-              Text(_selectedCountry.flag, style: const TextStyle(fontSize: 25)),
-              const SizedBox(width: 8),
-
-              // FittedBox(child: Text('+${_selectedCountry.dialCode}', style: widget.dropdownTextStyle)),
-              // if (widget.enabled && widget.showDropdownIcon && widget.dropdownIconPosition == IconPosition.trailing) ...[
-              // const SizedBox(width: 4),
-              // widget.dropdownIcon,
-              // ],
-              const SizedBox(width: 8),
-            ],
-          ),
-        ),
+    return InkWell(
+      onTap: widget.enabled ? _changeCountry : null,
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const SizedBox(width: 16),
+          // if (widget.enabled && widget.showDropdownIcon && widget.dropdownIconPosition == IconPosition.leading) ...[Icon(Icons.arrow_drop_down, color: Colors.white), const SizedBox(width: 4)],
+          Text(_selectedCountry.flag, style: const TextStyle(fontSize: 25)),
+          const SizedBox(width: 8),
+          // FittedBox(child: Text('+${_selectedCountry.dialCode}', style: widget.dropdownTextStyle)),
+          // if (widget.enabled && widget.showDropdownIcon && widget.dropdownIconPosition == IconPosition.trailing) ...[
+          // const SizedBox(width: 4),
+          // widget.dropdownIcon, ],
+          const SizedBox(width: 8),
+        ],
       ),
     );
   }

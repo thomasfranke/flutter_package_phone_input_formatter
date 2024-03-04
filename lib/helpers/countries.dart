@@ -28,7 +28,7 @@ const List<Country> countries = [
       "yue": "阿富汗"
     },
     flag: "🇦🇫",
-    codeIso: "AF",
+    isoCode: "AF",
     dialCode: "93",
     minLength: 9,
     maxLength: 9,
@@ -59,7 +59,7 @@ const List<Country> countries = [
       "yue": "奧蘭群島"
     },
     flag: "🇦🇽",
-    codeIso: "AX",
+    isoCode: "AX",
     dialCode: "358",
     minLength: 15,
     maxLength: 15,
@@ -90,7 +90,7 @@ const List<Country> countries = [
       "yue": "阿爾巴尼亞"
     },
     flag: "🇦🇱",
-    codeIso: "AL",
+    isoCode: "AL",
     dialCode: "355",
     minLength: 9,
     maxLength: 9,
@@ -121,7 +121,7 @@ const List<Country> countries = [
       "yue": "阿爾及利亞"
     },
     flag: "🇩🇿",
-    codeIso: "DZ",
+    isoCode: "DZ",
     dialCode: "213",
     minLength: 9,
     maxLength: 9,
@@ -152,7 +152,7 @@ const List<Country> countries = [
       "yue": "美屬薩摩亞"
     },
     flag: "🇦🇸",
-    codeIso: "AS",
+    isoCode: "AS",
     dialCode: "1684",
     minLength: 7,
     maxLength: 7,
@@ -183,7 +183,7 @@ const List<Country> countries = [
       "yue": "安道爾"
     },
     flag: "🇦🇩",
-    codeIso: "AD",
+    isoCode: "AD",
     dialCode: "376",
     minLength: 6,
     maxLength: 6,
@@ -214,7 +214,7 @@ const List<Country> countries = [
       "yue": "安哥拉"
     },
     flag: "🇦🇴",
-    codeIso: "AO",
+    isoCode: "AO",
     dialCode: "244",
     minLength: 9,
     maxLength: 9,
@@ -245,7 +245,7 @@ const List<Country> countries = [
       "yue": "安圭拉"
     },
     flag: "🇦🇮",
-    codeIso: "AI",
+    isoCode: "AI",
     dialCode: "1264",
     minLength: 7,
     maxLength: 7,
@@ -276,7 +276,7 @@ const List<Country> countries = [
       "yue": "南极洲"
     },
     flag: "🇦🇶",
-    codeIso: "AQ",
+    isoCode: "AQ",
     dialCode: "672",
     minLength: 6,
     maxLength: 6,
@@ -307,7 +307,7 @@ const List<Country> countries = [
       "yue": "安提瓜同巴布达"
     },
     flag: "🇦🇬",
-    codeIso: "AG",
+    isoCode: "AG",
     dialCode: "1268",
     minLength: 7,
     maxLength: 7,
@@ -338,7 +338,7 @@ const List<Country> countries = [
       "yue": "阿根廷"
     },
     flag: "🇦🇷",
-    codeIso: "AR",
+    isoCode: "AR",
     dialCode: "54",
     minLength: 12,
     maxLength: 12,
@@ -369,7 +369,7 @@ const List<Country> countries = [
       "yue": "亞美尼亞"
     },
     flag: "🇦🇲",
-    codeIso: "AM",
+    isoCode: "AM",
     dialCode: "374",
     minLength: 8,
     maxLength: 8,
@@ -400,7 +400,7 @@ const List<Country> countries = [
       "yue": "阿魯巴島"
     },
     flag: "🇦🇼",
-    codeIso: "AW",
+    isoCode: "AW",
     dialCode: "297",
     minLength: 7,
     maxLength: 7,
@@ -431,7 +431,7 @@ const List<Country> countries = [
       "yue": "澳洲"
     },
     flag: "🇦🇺",
-    codeIso: "AU",
+    isoCode: "AU",
     dialCode: "61",
     minLength: 9,
     maxLength: 9,
@@ -462,7 +462,7 @@ const List<Country> countries = [
       "yue": "奧地利"
     },
     flag: "🇦🇹",
-    codeIso: "AT",
+    isoCode: "AT",
     dialCode: "43",
     minLength: 13,
     maxLength: 13,
@@ -493,7 +493,7 @@ const List<Country> countries = [
       "yue": "阿塞拜疆"
     },
     flag: "🇦🇿",
-    codeIso: "AZ",
+    isoCode: "AZ",
     dialCode: "994",
     minLength: 9,
     maxLength: 9,
@@ -524,7 +524,7 @@ const List<Country> countries = [
       "yue": "巴哈馬"
     },
     flag: "🇧🇸",
-    codeIso: "BS",
+    isoCode: "BS",
     dialCode: "1242",
     minLength: 7,
     maxLength: 7,
@@ -555,7 +555,7 @@ const List<Country> countries = [
       "yue": "巴林"
     },
     flag: "🇧🇭",
-    codeIso: "BH",
+    isoCode: "BH",
     dialCode: "973",
     minLength: 8,
     maxLength: 8,
@@ -586,7 +586,7 @@ const List<Country> countries = [
       "yue": "孟加拉囯"
     },
     flag: "🇧🇩",
-    codeIso: "BD",
+    isoCode: "BD",
     dialCode: "880",
     minLength: 10,
     maxLength: 10,
@@ -617,7 +617,7 @@ const List<Country> countries = [
       "yue": "巴巴多斯"
     },
     flag: "🇧🇧",
-    codeIso: "BB",
+    isoCode: "BB",
     dialCode: "1246",
     minLength: 7,
     maxLength: 7,
@@ -648,7 +648,7 @@ const List<Country> countries = [
       "yue": "白俄羅斯"
     },
     flag: "🇧🇾",
-    codeIso: "BY",
+    isoCode: "BY",
     dialCode: "375",
     minLength: 10,
     maxLength: 10,
@@ -679,7 +679,7 @@ const List<Country> countries = [
       "yue": "比利時"
     },
     flag: "🇧🇪",
-    codeIso: "BE",
+    isoCode: "BE",
     dialCode: "32",
     minLength: 9,
     maxLength: 9,
@@ -710,7 +710,7 @@ const List<Country> countries = [
       "yue": "伯利茲"
     },
     flag: "🇧🇿",
-    codeIso: "BZ",
+    isoCode: "BZ",
     dialCode: "501",
     minLength: 7,
     maxLength: 7,
@@ -741,7 +741,7 @@ const List<Country> countries = [
       "yue": "貝寧"
     },
     flag: "🇧🇯",
-    codeIso: "BJ",
+    isoCode: "BJ",
     dialCode: "229",
     minLength: 8,
     maxLength: 8,
@@ -772,7 +772,7 @@ const List<Country> countries = [
       "yue": "百慕大"
     },
     flag: "🇧🇲",
-    codeIso: "BM",
+    isoCode: "BM",
     dialCode: "1441",
     minLength: 7,
     maxLength: 7,
@@ -803,7 +803,7 @@ const List<Country> countries = [
       "yue": "不丹"
     },
     flag: "🇧🇹",
-    codeIso: "BT",
+    isoCode: "BT",
     dialCode: "975",
     minLength: 8,
     maxLength: 8,
@@ -834,7 +834,7 @@ const List<Country> countries = [
       "yue": "玻利維亞（多民族國家）"
     },
     flag: "🇧🇴",
-    codeIso: "BO",
+    isoCode: "BO",
     dialCode: "591",
     minLength: 8,
     maxLength: 8,
@@ -865,7 +865,7 @@ const List<Country> countries = [
       "yue": "波斯尼亞黑塞哥維那"
     },
     flag: "🇧🇦",
-    codeIso: "BA",
+    isoCode: "BA",
     dialCode: "387",
     minLength: 9,
     maxLength: 9,
@@ -896,7 +896,7 @@ const List<Country> countries = [
       "yue": "博茨瓦納"
     },
     flag: "🇧🇼",
-    codeIso: "BW",
+    isoCode: "BW",
     dialCode: "267",
     minLength: 8,
     maxLength: 8,
@@ -927,7 +927,7 @@ const List<Country> countries = [
       "yue": "布维特岛"
     },
     flag: "🇧🇻",
-    codeIso: "BV",
+    isoCode: "BV",
     dialCode: "47",
     minLength: 15,
     maxLength: 15,
@@ -958,7 +958,7 @@ const List<Country> countries = [
       "yue": "巴西"
     },
     flag: "🇧🇷",
-    codeIso: "BR",
+    isoCode: "BR",
     dialCode: "55",
     minLength: 11,
     maxLength: 11,
@@ -989,7 +989,7 @@ const List<Country> countries = [
       "yue": "英屬印度洋領土"
     },
     flag: "🇮🇴",
-    codeIso: "IO",
+    isoCode: "IO",
     dialCode: "246",
     minLength: 7,
     maxLength: 7,
@@ -1020,7 +1020,7 @@ const List<Country> countries = [
       "yue": "文萊達魯薩蘭國"
     },
     flag: "🇧🇳",
-    codeIso: "BN",
+    isoCode: "BN",
     dialCode: "673",
     minLength: 7,
     maxLength: 7,
@@ -1051,7 +1051,7 @@ const List<Country> countries = [
       "yue": "保加利亞"
     },
     flag: "🇧🇬",
-    codeIso: "BG",
+    isoCode: "BG",
     dialCode: "359",
     minLength: 9,
     maxLength: 9,
@@ -1082,7 +1082,7 @@ const List<Country> countries = [
       "yue": "布基納法索"
     },
     flag: "🇧🇫",
-    codeIso: "BF",
+    isoCode: "BF",
     dialCode: "226",
     minLength: 8,
     maxLength: 8,
@@ -1113,7 +1113,7 @@ const List<Country> countries = [
       "yue": "蒲隆地"
     },
     flag: "🇧🇮",
-    codeIso: "BI",
+    isoCode: "BI",
     dialCode: "257",
     minLength: 8,
     maxLength: 8,
@@ -1144,7 +1144,7 @@ const List<Country> countries = [
       "yue": "柬埔寨"
     },
     flag: "🇰🇭",
-    codeIso: "KH",
+    isoCode: "KH",
     dialCode: "855",
     minLength: 9,
     maxLength: 9,
@@ -1175,7 +1175,7 @@ const List<Country> countries = [
       "yue": "喀 麥 隆"
     },
     flag: "🇨🇲",
-    codeIso: "CM",
+    isoCode: "CM",
     dialCode: "237",
     minLength: 9,
     maxLength: 9,
@@ -1206,7 +1206,7 @@ const List<Country> countries = [
       "yue": "加拿大"
     },
     flag: "🇨🇦",
-    codeIso: "CA",
+    isoCode: "CA",
     dialCode: "1",
     minLength: 10,
     maxLength: 10,
@@ -1237,7 +1237,7 @@ const List<Country> countries = [
       "yue": "開曼群島"
     },
     flag: "🇰🇾",
-    codeIso: "KY",
+    isoCode: "KY",
     dialCode: "345",
     minLength: 7,
     maxLength: 7,
@@ -1268,7 +1268,7 @@ const List<Country> countries = [
       "yue": "中非共和國"
     },
     flag: "🇨🇫",
-    codeIso: "CF",
+    isoCode: "CF",
     dialCode: "236",
     minLength: 8,
     maxLength: 8,
@@ -1299,7 +1299,7 @@ const List<Country> countries = [
       "yue": "乍得"
     },
     flag: "🇹🇩",
-    codeIso: "TD",
+    isoCode: "TD",
     dialCode: "235",
     minLength: 7,
     maxLength: 7,
@@ -1330,7 +1330,7 @@ const List<Country> countries = [
       "yue": "智利"
     },
     flag: "🇨🇱",
-    codeIso: "CL",
+    isoCode: "CL",
     dialCode: "56",
     minLength: 9,
     maxLength: 9,
@@ -1361,7 +1361,7 @@ const List<Country> countries = [
       "yue": "中國"
     },
     flag: "🇨🇳",
-    codeIso: "CN",
+    isoCode: "CN",
     dialCode: "86",
     minLength: 11,
     maxLength: 12,
@@ -1392,7 +1392,7 @@ const List<Country> countries = [
       "yue": "聖誕島"
     },
     flag: "🇨🇽",
-    codeIso: "CX",
+    isoCode: "CX",
     dialCode: "61",
     minLength: 15,
     maxLength: 15,
@@ -1423,7 +1423,7 @@ const List<Country> countries = [
       "yue": "可可島（基林）群島"
     },
     flag: "🇨🇨",
-    codeIso: "CC",
+    isoCode: "CC",
     dialCode: "61",
     minLength: 15,
     maxLength: 15,
@@ -1454,7 +1454,7 @@ const List<Country> countries = [
       "yue": "哥倫比亞"
     },
     flag: "🇨🇴",
-    codeIso: "CO",
+    isoCode: "CO",
     dialCode: "57",
     minLength: 10,
     maxLength: 10,
@@ -1485,7 +1485,7 @@ const List<Country> countries = [
       "yue": "科摩羅"
     },
     flag: "🇰🇲",
-    codeIso: "KM",
+    isoCode: "KM",
     dialCode: "269",
     minLength: 7,
     maxLength: 7,
@@ -1516,7 +1516,7 @@ const List<Country> countries = [
       "yue": "剛果（共和國）"
     },
     flag: "🇨🇬",
-    codeIso: "CG",
+    isoCode: "CG",
     dialCode: "242",
     minLength: 7,
     maxLength: 7,
@@ -1547,7 +1547,7 @@ const List<Country> countries = [
       "yue": "剛果（金）"
     },
     flag: "🇨🇩",
-    codeIso: "CD",
+    isoCode: "CD",
     dialCode: "243",
     minLength: 9,
     maxLength: 9,
@@ -1578,7 +1578,7 @@ const List<Country> countries = [
       "yue": "庫克群島"
     },
     flag: "🇨🇰",
-    codeIso: "CK",
+    isoCode: "CK",
     dialCode: "682",
     minLength: 5,
     maxLength: 5,
@@ -1609,7 +1609,7 @@ const List<Country> countries = [
       "yue": "哥斯達黎加"
     },
     flag: "🇨🇷",
-    codeIso: "CR",
+    isoCode: "CR",
     dialCode: "506",
     minLength: 8,
     maxLength: 8,
@@ -1640,7 +1640,7 @@ const List<Country> countries = [
       "yue": "科特迪瓦"
     },
     flag: "🇨🇮",
-    codeIso: "CI",
+    isoCode: "CI",
     dialCode: "225",
     minLength: 10,
     maxLength: 10,
@@ -1671,7 +1671,7 @@ const List<Country> countries = [
       "yue": "克羅地亞"
     },
     flag: "🇭🇷",
-    codeIso: "HR",
+    isoCode: "HR",
     dialCode: "385",
     minLength: 12,
     maxLength: 12,
@@ -1702,7 +1702,7 @@ const List<Country> countries = [
       "yue": "古巴"
     },
     flag: "🇨🇺",
-    codeIso: "CU",
+    isoCode: "CU",
     dialCode: "53",
     minLength: 8,
     maxLength: 8,
@@ -1733,7 +1733,7 @@ const List<Country> countries = [
       "yue": "塞浦路斯"
     },
     flag: "🇨🇾",
-    codeIso: "CY",
+    isoCode: "CY",
     dialCode: "357",
     minLength: 8,
     maxLength: 8,
@@ -1764,7 +1764,7 @@ const List<Country> countries = [
       "yue": "捷克共和國"
     },
     flag: "🇨🇿",
-    codeIso: "CZ",
+    isoCode: "CZ",
     dialCode: "420",
     minLength: 9,
     maxLength: 9,
@@ -1795,7 +1795,7 @@ const List<Country> countries = [
       "yue": "丹麥"
     },
     flag: "🇩🇰",
-    codeIso: "DK",
+    isoCode: "DK",
     dialCode: "45",
     minLength: 8,
     maxLength: 8,
@@ -1826,7 +1826,7 @@ const List<Country> countries = [
       "yue": "吉布提"
     },
     flag: "🇩🇯",
-    codeIso: "DJ",
+    isoCode: "DJ",
     dialCode: "253",
     minLength: 6,
     maxLength: 6,
@@ -1857,7 +1857,7 @@ const List<Country> countries = [
       "yue": "多米尼加"
     },
     flag: "🇩🇲",
-    codeIso: "DM",
+    isoCode: "DM",
     dialCode: "1767",
     minLength: 7,
     maxLength: 7,
@@ -1888,7 +1888,7 @@ const List<Country> countries = [
       "yue": "多明尼加共和國"
     },
     flag: "🇩🇴",
-    codeIso: "DO",
+    isoCode: "DO",
     dialCode: "1",
     minLength: 10,
     maxLength: 10,
@@ -1919,7 +1919,7 @@ const List<Country> countries = [
       "yue": "厄瓜多爾"
     },
     flag: "🇪🇨",
-    codeIso: "EC",
+    isoCode: "EC",
     dialCode: "593",
     minLength: 8,
     maxLength: 9,
@@ -1950,7 +1950,7 @@ const List<Country> countries = [
       "yue": "埃及"
     },
     flag: "🇪🇬",
-    codeIso: "EG",
+    isoCode: "EG",
     dialCode: "20",
     minLength: 10,
     maxLength: 10,
@@ -1981,7 +1981,7 @@ const List<Country> countries = [
       "yue": "薩爾瓦多"
     },
     flag: "🇸🇻",
-    codeIso: "SV",
+    isoCode: "SV",
     dialCode: "503",
     minLength: 11,
     maxLength: 11,
@@ -2012,7 +2012,7 @@ const List<Country> countries = [
       "yue": "赤道幾內亞"
     },
     flag: "🇬🇶",
-    codeIso: "GQ",
+    isoCode: "GQ",
     dialCode: "240",
     minLength: 6,
     maxLength: 6,
@@ -2043,7 +2043,7 @@ const List<Country> countries = [
       "yue": "厄立特里亞"
     },
     flag: "🇪🇷",
-    codeIso: "ER",
+    isoCode: "ER",
     dialCode: "291",
     minLength: 7,
     maxLength: 7,
@@ -2074,7 +2074,7 @@ const List<Country> countries = [
       "yue": "愛沙尼亞"
     },
     flag: "🇪🇪",
-    codeIso: "EE",
+    isoCode: "EE",
     dialCode: "372",
     minLength: 10,
     maxLength: 10,
@@ -2105,7 +2105,7 @@ const List<Country> countries = [
       "yue": "埃塞俄比亞"
     },
     flag: "🇪🇹",
-    codeIso: "ET",
+    isoCode: "ET",
     dialCode: "251",
     minLength: 9,
     maxLength: 9,
@@ -2136,7 +2136,7 @@ const List<Country> countries = [
       "yue": "福克蘭群島（馬爾維納斯群島）"
     },
     flag: "🇫🇰",
-    codeIso: "FK",
+    isoCode: "FK",
     dialCode: "500",
     minLength: 5,
     maxLength: 5,
@@ -2167,7 +2167,7 @@ const List<Country> countries = [
       "yue": "法羅群島"
     },
     flag: "🇫🇴",
-    codeIso: "FO",
+    isoCode: "FO",
     dialCode: "298",
     minLength: 6,
     maxLength: 6,
@@ -2198,7 +2198,7 @@ const List<Country> countries = [
       "yue": "斐濟"
     },
     flag: "🇫🇯",
-    codeIso: "FJ",
+    isoCode: "FJ",
     dialCode: "679",
     minLength: 7,
     maxLength: 7,
@@ -2229,7 +2229,7 @@ const List<Country> countries = [
       "yue": "芬蘭"
     },
     flag: "🇫🇮",
-    codeIso: "FI",
+    isoCode: "FI",
     dialCode: "358",
     minLength: 12,
     maxLength: 12,
@@ -2260,7 +2260,7 @@ const List<Country> countries = [
       "yue": "法國"
     },
     flag: "🇫🇷",
-    codeIso: "FR",
+    isoCode: "FR",
     dialCode: "33",
     minLength: 9,
     maxLength: 9,
@@ -2291,7 +2291,7 @@ const List<Country> countries = [
       "yue": "法屬圭亞那"
     },
     flag: "🇬🇫",
-    codeIso: "GF",
+    isoCode: "GF",
     dialCode: "594",
     minLength: 15,
     maxLength: 15,
@@ -2322,7 +2322,7 @@ const List<Country> countries = [
       "yue": "法屬波利尼西亞"
     },
     flag: "🇵🇫",
-    codeIso: "PF",
+    isoCode: "PF",
     dialCode: "689",
     minLength: 6,
     maxLength: 6,
@@ -2353,7 +2353,7 @@ const List<Country> countries = [
       "yue": "法國南部領土"
     },
     flag: "🇹🇫",
-    codeIso: "TF",
+    isoCode: "TF",
     dialCode: "262",
     minLength: 15,
     maxLength: 15,
@@ -2384,7 +2384,7 @@ const List<Country> countries = [
       "yue": "加蓬"
     },
     flag: "🇬🇦",
-    codeIso: "GA",
+    isoCode: "GA",
     dialCode: "241",
     minLength: 9,
     maxLength: 9,
@@ -2415,7 +2415,7 @@ const List<Country> countries = [
       "yue": "岡比亞"
     },
     flag: "🇬🇲",
-    codeIso: "GM",
+    isoCode: "GM",
     dialCode: "220",
     minLength: 7,
     maxLength: 7,
@@ -2446,7 +2446,7 @@ const List<Country> countries = [
       "yue": "格魯吉亞"
     },
     flag: "🇬🇪",
-    codeIso: "GE",
+    isoCode: "GE",
     dialCode: "995",
     minLength: 8,
     maxLength: 9,
@@ -2477,7 +2477,7 @@ const List<Country> countries = [
       "yue": "德國"
     },
     flag: "🇩🇪",
-    codeIso: "DE",
+    isoCode: "DE",
     dialCode: "49",
     minLength: 9,
     maxLength: 13,
@@ -2508,7 +2508,7 @@ const List<Country> countries = [
       "yue": "加納"
     },
     flag: "🇬🇭",
-    codeIso: "GH",
+    isoCode: "GH",
     dialCode: "233",
     minLength: 9,
     maxLength: 9,
@@ -2539,7 +2539,7 @@ const List<Country> countries = [
       "yue": "直布羅陀"
     },
     flag: "🇬🇮",
-    codeIso: "GI",
+    isoCode: "GI",
     dialCode: "350",
     minLength: 8,
     maxLength: 8,
@@ -2570,7 +2570,7 @@ const List<Country> countries = [
       "yue": "希臘"
     },
     flag: "🇬🇷",
-    codeIso: "GR",
+    isoCode: "GR",
     dialCode: "30",
     minLength: 10,
     maxLength: 10,
@@ -2601,7 +2601,7 @@ const List<Country> countries = [
       "yue": "格陵蘭"
     },
     flag: "🇬🇱",
-    codeIso: "GL",
+    isoCode: "GL",
     dialCode: "299",
     minLength: 6,
     maxLength: 6,
@@ -2632,7 +2632,7 @@ const List<Country> countries = [
       "yue": "格林納達"
     },
     flag: "🇬🇩",
-    codeIso: "GD",
+    isoCode: "GD",
     dialCode: "1473",
     minLength: 7,
     maxLength: 7,
@@ -2663,7 +2663,7 @@ const List<Country> countries = [
       "yue": "瓜德罗普"
     },
     flag: "🇬🇵",
-    codeIso: "GP",
+    isoCode: "GP",
     dialCode: "590",
     minLength: 15,
     maxLength: 15,
@@ -2694,7 +2694,7 @@ const List<Country> countries = [
       "yue": "關島"
     },
     flag: "🇬🇺",
-    codeIso: "GU",
+    isoCode: "GU",
     dialCode: "1671",
     minLength: 7,
     maxLength: 7,
@@ -2725,7 +2725,7 @@ const List<Country> countries = [
       "yue": "危地馬拉"
     },
     flag: "🇬🇹",
-    codeIso: "GT",
+    isoCode: "GT",
     dialCode: "502",
     minLength: 8,
     maxLength: 8,
@@ -2756,7 +2756,7 @@ const List<Country> countries = [
       "yue": "格恩西島"
     },
     flag: "🇬🇬",
-    codeIso: "GG",
+    isoCode: "GG",
     dialCode: "44",
     minLength: 6,
     maxLength: 6,
@@ -2787,7 +2787,7 @@ const List<Country> countries = [
       "yue": "幾內亞"
     },
     flag: "🇬🇳",
-    codeIso: "GN",
+    isoCode: "GN",
     dialCode: "224",
     minLength: 8,
     maxLength: 9,
@@ -2818,7 +2818,7 @@ const List<Country> countries = [
       "yue": "幾內亞比紹"
     },
     flag: "🇬🇼",
-    codeIso: "GW",
+    isoCode: "GW",
     dialCode: "245",
     minLength: 7,
     maxLength: 7,
@@ -2849,7 +2849,7 @@ const List<Country> countries = [
       "yue": "圭亞那"
     },
     flag: "🇬🇾",
-    codeIso: "GY",
+    isoCode: "GY",
     dialCode: "592",
     minLength: 7,
     maxLength: 7,
@@ -2880,7 +2880,7 @@ const List<Country> countries = [
       "yue": "海地"
     },
     flag: "🇭🇹",
-    codeIso: "HT",
+    isoCode: "HT",
     dialCode: "509",
     minLength: 8,
     maxLength: 8,
@@ -2911,7 +2911,7 @@ const List<Country> countries = [
       "yue": "赫德岛同麦克唐纳群岛"
     },
     flag: "🇭🇲",
-    codeIso: "HM",
+    isoCode: "HM",
     dialCode: "672",
     minLength: 15,
     maxLength: 15,
@@ -2942,7 +2942,7 @@ const List<Country> countries = [
       "yue": "梵蒂岡城國"
     },
     flag: "🇻🇦",
-    codeIso: "VA",
+    isoCode: "VA",
     dialCode: "379",
     minLength: 10,
     maxLength: 10,
@@ -2973,7 +2973,7 @@ const List<Country> countries = [
       "yue": "洪都拉斯"
     },
     flag: "🇭🇳",
-    codeIso: "HN",
+    isoCode: "HN",
     dialCode: "504",
     minLength: 8,
     maxLength: 8,
@@ -3004,7 +3004,7 @@ const List<Country> countries = [
       "yue": "香港"
     },
     flag: "🇭🇰",
-    codeIso: "HK",
+    isoCode: "HK",
     dialCode: "852",
     minLength: 8,
     maxLength: 8,
@@ -3035,7 +3035,7 @@ const List<Country> countries = [
       "yue": "匈牙利"
     },
     flag: "🇭🇺",
-    codeIso: "HU",
+    isoCode: "HU",
     dialCode: "36",
     minLength: 9,
     maxLength: 9,
@@ -3066,7 +3066,7 @@ const List<Country> countries = [
       "yue": "冰島"
     },
     flag: "🇮🇸",
-    codeIso: "IS",
+    isoCode: "IS",
     dialCode: "354",
     minLength: 7,
     maxLength: 9,
@@ -3097,7 +3097,7 @@ const List<Country> countries = [
       "yue": "印度"
     },
     flag: "🇮🇳",
-    codeIso: "IN",
+    isoCode: "IN",
     dialCode: "91",
     minLength: 10,
     maxLength: 10,
@@ -3128,7 +3128,7 @@ const List<Country> countries = [
       "yue": "印尼"
     },
     flag: "🇮🇩",
-    codeIso: "ID",
+    isoCode: "ID",
     dialCode: "62",
     minLength: 10,
     maxLength: 13,
@@ -3159,7 +3159,7 @@ const List<Country> countries = [
       "yue": "伊朗"
     },
     flag: "🇮🇷",
-    codeIso: "IR",
+    isoCode: "IR",
     dialCode: "98",
     minLength: 10,
     maxLength: 10,
@@ -3190,7 +3190,7 @@ const List<Country> countries = [
       "yue": "伊拉克"
     },
     flag: "🇮🇶",
-    codeIso: "IQ",
+    isoCode: "IQ",
     dialCode: "964",
     minLength: 10,
     maxLength: 10,
@@ -3221,7 +3221,7 @@ const List<Country> countries = [
       "yue": "愛爾蘭"
     },
     flag: "🇮🇪",
-    codeIso: "IE",
+    isoCode: "IE",
     dialCode: "353",
     minLength: 7,
     maxLength: 9,
@@ -3252,7 +3252,7 @@ const List<Country> countries = [
       "yue": "马伊岛"
     },
     flag: "🇮🇲",
-    codeIso: "IM",
+    isoCode: "IM",
     dialCode: "44",
     minLength: 6,
     maxLength: 6,
@@ -3283,7 +3283,7 @@ const List<Country> countries = [
       "yue": "以色列"
     },
     flag: "🇮🇱",
-    codeIso: "IL",
+    isoCode: "IL",
     dialCode: "972",
     minLength: 9,
     maxLength: 9,
@@ -3314,7 +3314,7 @@ const List<Country> countries = [
       "yue": "意大利"
     },
     flag: "🇮🇹",
-    codeIso: "IT",
+    isoCode: "IT",
     dialCode: "41",
     minLength: 13,
     maxLength: 13,
@@ -3345,7 +3345,7 @@ const List<Country> countries = [
       "yue": "牙買加"
     },
     flag: "🇯🇲",
-    codeIso: "JM",
+    isoCode: "JM",
     dialCode: "1876",
     minLength: 7,
     maxLength: 7,
@@ -3376,7 +3376,7 @@ const List<Country> countries = [
       "yue": "日本"
     },
     flag: "🇯🇵",
-    codeIso: "JP",
+    isoCode: "JP",
     dialCode: "81",
     minLength: 10,
     maxLength: 10,
@@ -3407,7 +3407,7 @@ const List<Country> countries = [
       "yue": "澤西"
     },
     flag: "🇯🇪",
-    codeIso: "JE",
+    isoCode: "JE",
     dialCode: "44",
     minLength: 6,
     maxLength: 6,
@@ -3438,7 +3438,7 @@ const List<Country> countries = [
       "yue": "約旦"
     },
     flag: "🇯🇴",
-    codeIso: "JO",
+    isoCode: "JO",
     dialCode: "962",
     minLength: 9,
     maxLength: 9,
@@ -3469,7 +3469,7 @@ const List<Country> countries = [
       "yue": "哈薩克斯坦"
     },
     flag: "🇰🇿",
-    codeIso: "KZ",
+    isoCode: "KZ",
     dialCode: "7",
     minLength: 10,
     maxLength: 10,
@@ -3500,7 +3500,7 @@ const List<Country> countries = [
       "yue": "肯雅"
     },
     flag: "🇰🇪",
-    codeIso: "KE",
+    isoCode: "KE",
     dialCode: "254",
     minLength: 10,
     maxLength: 10,
@@ -3531,7 +3531,7 @@ const List<Country> countries = [
       "yue": "基里巴斯"
     },
     flag: "🇰🇮",
-    codeIso: "KI",
+    isoCode: "KI",
     dialCode: "686",
     minLength: 5,
     maxLength: 5,
@@ -3562,7 +3562,7 @@ const List<Country> countries = [
       "yue": "朝鮮（朝鮮民主主義人民共咊囯）"
     },
     flag: "🇰🇵",
-    codeIso: "KP",
+    isoCode: "KP",
     dialCode: "850",
     minLength: 10,
     maxLength: 10,
@@ -3593,7 +3593,7 @@ const List<Country> countries = [
       "yue": "韓國（大韓民國）"
     },
     flag: "🇰🇷",
-    codeIso: "KR",
+    isoCode: "KR",
     dialCode: "82",
     minLength: 11,
     maxLength: 11,
@@ -3624,7 +3624,7 @@ const List<Country> countries = [
       "yue": "科威特"
     },
     flag: "🇰🇼",
-    codeIso: "KW",
+    isoCode: "KW",
     dialCode: "965",
     minLength: 8,
     maxLength: 8,
@@ -3655,7 +3655,7 @@ const List<Country> countries = [
       "yue": "吉爾吉斯斯坦"
     },
     flag: "🇰🇬",
-    codeIso: "KG",
+    isoCode: "KG",
     dialCode: "996",
     minLength: 9,
     maxLength: 9,
@@ -3686,7 +3686,7 @@ const List<Country> countries = [
       "yue": "老撾人民民主共和國"
     },
     flag: "🇱🇦",
-    codeIso: "LA",
+    isoCode: "LA",
     dialCode: "856",
     minLength: 10,
     maxLength: 10,
@@ -3717,7 +3717,7 @@ const List<Country> countries = [
       "yue": "拉脫維亞"
     },
     flag: "🇱🇻",
-    codeIso: "LV",
+    isoCode: "LV",
     dialCode: "371",
     minLength: 8,
     maxLength: 8,
@@ -3748,7 +3748,7 @@ const List<Country> countries = [
       "yue": "黎巴嫩"
     },
     flag: "🇱🇧",
-    codeIso: "LB",
+    isoCode: "LB",
     dialCode: "961",
     minLength: 8,
     maxLength: 8,
@@ -3779,7 +3779,7 @@ const List<Country> countries = [
       "yue": "萊索托"
     },
     flag: "🇱🇸",
-    codeIso: "LS",
+    isoCode: "LS",
     dialCode: "266",
     minLength: 8,
     maxLength: 8,
@@ -3810,7 +3810,7 @@ const List<Country> countries = [
       "yue": "利比里亞"
     },
     flag: "🇱🇷",
-    codeIso: "LR",
+    isoCode: "LR",
     dialCode: "231",
     minLength: 8,
     maxLength: 8,
@@ -3841,7 +3841,7 @@ const List<Country> countries = [
       "yue": "利比亞"
     },
     flag: "🇱🇾",
-    codeIso: "LY",
+    isoCode: "LY",
     dialCode: "218",
     minLength: 9,
     maxLength: 9,
@@ -3872,7 +3872,7 @@ const List<Country> countries = [
       "yue": "列支敦士登"
     },
     flag: "🇱🇮",
-    codeIso: "LI",
+    isoCode: "LI",
     dialCode: "423",
     minLength: 9,
     maxLength: 9,
@@ -3903,7 +3903,7 @@ const List<Country> countries = [
       "yue": "立陶宛"
     },
     flag: "🇱🇹",
-    codeIso: "LT",
+    isoCode: "LT",
     dialCode: "370",
     minLength: 8,
     maxLength: 8,
@@ -3934,7 +3934,7 @@ const List<Country> countries = [
       "yue": "盧森堡"
     },
     flag: "🇱🇺",
-    codeIso: "LU",
+    isoCode: "LU",
     dialCode: "352",
     minLength: 11,
     maxLength: 11,
@@ -3965,7 +3965,7 @@ const List<Country> countries = [
       "yue": "澳門"
     },
     flag: "🇲🇴",
-    codeIso: "MO",
+    isoCode: "MO",
     dialCode: "853",
     minLength: 8,
     maxLength: 8,
@@ -3996,7 +3996,7 @@ const List<Country> countries = [
       "yue": "馬其頓（前南斯拉夫共和國）"
     },
     flag: "🇲🇰",
-    codeIso: "MK",
+    isoCode: "MK",
     dialCode: "389",
     minLength: 8,
     maxLength: 8,
@@ -4027,7 +4027,7 @@ const List<Country> countries = [
       "yue": "馬達加斯加"
     },
     flag: "🇲🇬",
-    codeIso: "MG",
+    isoCode: "MG",
     dialCode: "261",
     minLength: 10,
     maxLength: 10,
@@ -4058,7 +4058,7 @@ const List<Country> countries = [
       "yue": "馬拉維"
     },
     flag: "🇲🇼",
-    codeIso: "MW",
+    isoCode: "MW",
     dialCode: "265",
     minLength: 7,
     maxLength: 9,
@@ -4089,7 +4089,7 @@ const List<Country> countries = [
       "yue": "馬來西亞"
     },
     flag: "🇲🇾",
-    codeIso: "MY",
+    isoCode: "MY",
     dialCode: "60",
     minLength: 11,
     maxLength: 11,
@@ -4120,7 +4120,7 @@ const List<Country> countries = [
       "yue": "馬爾代夫"
     },
     flag: "🇲🇻",
-    codeIso: "MV",
+    isoCode: "MV",
     dialCode: "960",
     minLength: 7,
     maxLength: 7,
@@ -4151,7 +4151,7 @@ const List<Country> countries = [
       "yue": "馬里"
     },
     flag: "🇲🇱",
-    codeIso: "ML",
+    isoCode: "ML",
     dialCode: "223",
     minLength: 8,
     maxLength: 8,
@@ -4182,7 +4182,7 @@ const List<Country> countries = [
       "yue": "馬耳他"
     },
     flag: "🇲🇹",
-    codeIso: "MT",
+    isoCode: "MT",
     dialCode: "356",
     minLength: 8,
     maxLength: 8,
@@ -4213,7 +4213,7 @@ const List<Country> countries = [
       "yue": "馬紹爾群島"
     },
     flag: "🇲🇭",
-    codeIso: "MH",
+    isoCode: "MH",
     dialCode: "692",
     minLength: 7,
     maxLength: 7,
@@ -4244,7 +4244,7 @@ const List<Country> countries = [
       "yue": "马提尼克"
     },
     flag: "🇲🇶",
-    codeIso: "MQ",
+    isoCode: "MQ",
     dialCode: "596",
     minLength: 15,
     maxLength: 15,
@@ -4275,7 +4275,7 @@ const List<Country> countries = [
       "yue": "毛里塔尼亞"
     },
     flag: "🇲🇷",
-    codeIso: "MR",
+    isoCode: "MR",
     dialCode: "222",
     minLength: 8,
     maxLength: 8,
@@ -4306,7 +4306,7 @@ const List<Country> countries = [
       "yue": "毛里求斯"
     },
     flag: "🇲🇺",
-    codeIso: "MU",
+    isoCode: "MU",
     dialCode: "230",
     minLength: 7,
     maxLength: 8,
@@ -4337,7 +4337,7 @@ const List<Country> countries = [
       "yue": "馬約特"
     },
     flag: "🇾🇹",
-    codeIso: "YT",
+    isoCode: "YT",
     dialCode: "262",
     minLength: 9,
     maxLength: 9,
@@ -4368,7 +4368,7 @@ const List<Country> countries = [
       "yue": "墨西哥"
     },
     flag: "🇲🇽",
-    codeIso: "MX",
+    isoCode: "MX",
     dialCode: "52",
     minLength: 10,
     maxLength: 10,
@@ -4399,7 +4399,7 @@ const List<Country> countries = [
       "yue": "密克罗尼西亚（聯邦）"
     },
     flag: "🇫🇲",
-    codeIso: "FM",
+    isoCode: "FM",
     dialCode: "691",
     minLength: 7,
     maxLength: 7,
@@ -4430,7 +4430,7 @@ const List<Country> countries = [
       "yue": "摩爾多瓦（共和國）"
     },
     flag: "🇲🇩",
-    codeIso: "MD",
+    isoCode: "MD",
     dialCode: "373",
     minLength: 8,
     maxLength: 8,
@@ -4461,7 +4461,7 @@ const List<Country> countries = [
       "yue": "摩納哥"
     },
     flag: "🇲🇨",
-    codeIso: "MC",
+    isoCode: "MC",
     dialCode: "377",
     minLength: 9,
     maxLength: 9,
@@ -4492,7 +4492,7 @@ const List<Country> countries = [
       "yue": "蒙古"
     },
     flag: "🇲🇳",
-    codeIso: "MN",
+    isoCode: "MN",
     dialCode: "976",
     minLength: 8,
     maxLength: 8,
@@ -4523,7 +4523,7 @@ const List<Country> countries = [
       "yue": "黑山"
     },
     flag: "🇲🇪",
-    codeIso: "ME",
+    isoCode: "ME",
     dialCode: "382",
     minLength: 12,
     maxLength: 12,
@@ -4554,7 +4554,7 @@ const List<Country> countries = [
       "yue": "蒙特塞拉特"
     },
     flag: "🇲🇸",
-    codeIso: "MS",
+    isoCode: "MS",
     dialCode: "1664",
     minLength: 7,
     maxLength: 7,
@@ -4585,7 +4585,7 @@ const List<Country> countries = [
       "yue": "摩洛哥"
     },
     flag: "🇲🇦",
-    codeIso: "MA",
+    isoCode: "MA",
     dialCode: "212",
     minLength: 9,
     maxLength: 9,
@@ -4616,7 +4616,7 @@ const List<Country> countries = [
       "yue": "莫桑比克"
     },
     flag: "🇲🇿",
-    codeIso: "MZ",
+    isoCode: "MZ",
     dialCode: "258",
     minLength: 9,
     maxLength: 9,
@@ -4647,7 +4647,7 @@ const List<Country> countries = [
       "yue": "緬甸"
     },
     flag: "🇲🇲",
-    codeIso: "MM",
+    isoCode: "MM",
     dialCode: "95",
     minLength: 9,
     maxLength: 9,
@@ -4678,7 +4678,7 @@ const List<Country> countries = [
       "yue": "納米比亞"
     },
     flag: "🇳🇦",
-    codeIso: "NA",
+    isoCode: "NA",
     dialCode: "264",
     minLength: 10,
     maxLength: 10,
@@ -4709,7 +4709,7 @@ const List<Country> countries = [
       "yue": "瑙魯"
     },
     flag: "🇳🇷",
-    codeIso: "NR",
+    isoCode: "NR",
     dialCode: "674",
     minLength: 7,
     maxLength: 7,
@@ -4740,7 +4740,7 @@ const List<Country> countries = [
       "yue": "尼泊爾"
     },
     flag: "🇳🇵",
-    codeIso: "NP",
+    isoCode: "NP",
     dialCode: "977",
     minLength: 10,
     maxLength: 10,
@@ -4771,7 +4771,7 @@ const List<Country> countries = [
       "yue": "荷蘭"
     },
     flag: "🇳🇱",
-    codeIso: "NL",
+    isoCode: "NL",
     dialCode: "31",
     minLength: 9,
     maxLength: 9,
@@ -4802,7 +4802,7 @@ const List<Country> countries = [
       "yue": "新喀里多尼亚"
     },
     flag: "🇳🇨",
-    codeIso: "NC",
+    isoCode: "NC",
     dialCode: "687",
     minLength: 6,
     maxLength: 6,
@@ -4833,7 +4833,7 @@ const List<Country> countries = [
       "yue": "紐西蘭"
     },
     flag: "🇳🇿",
-    codeIso: "NZ",
+    isoCode: "NZ",
     dialCode: "64",
     minLength: 10,
     maxLength: 10,
@@ -4864,7 +4864,7 @@ const List<Country> countries = [
       "yue": "尼加拉瓜"
     },
     flag: "🇳🇮",
-    codeIso: "NI",
+    isoCode: "NI",
     dialCode: "505",
     minLength: 8,
     maxLength: 8,
@@ -4895,7 +4895,7 @@ const List<Country> countries = [
       "yue": "尼日爾"
     },
     flag: "🇳🇪",
-    codeIso: "NE",
+    isoCode: "NE",
     dialCode: "227",
     minLength: 8,
     maxLength: 8,
@@ -4926,7 +4926,7 @@ const List<Country> countries = [
       "yue": "尼日利亞"
     },
     flag: "🇳🇬",
-    codeIso: "NG",
+    isoCode: "NG",
     dialCode: "234",
     minLength: 10,
     maxLength: 11,
@@ -4957,7 +4957,7 @@ const List<Country> countries = [
       "yue": "紐埃"
     },
     flag: "🇳🇺",
-    codeIso: "NU",
+    isoCode: "NU",
     dialCode: "683",
     minLength: 4,
     maxLength: 4,
@@ -4988,7 +4988,7 @@ const List<Country> countries = [
       "yue": "诺福克岛"
     },
     flag: "🇳🇫",
-    codeIso: "NF",
+    isoCode: "NF",
     dialCode: "672",
     minLength: 15,
     maxLength: 15,
@@ -5019,7 +5019,7 @@ const List<Country> countries = [
       "yue": "北馬里亞納群島"
     },
     flag: "🇲🇵",
-    codeIso: "MP",
+    isoCode: "MP",
     dialCode: "1670",
     minLength: 7,
     maxLength: 7,
@@ -5050,7 +5050,7 @@ const List<Country> countries = [
       "yue": "挪威"
     },
     flag: "🇳🇴",
-    codeIso: "NO",
+    isoCode: "NO",
     dialCode: "47",
     minLength: 8,
     maxLength: 8,
@@ -5081,7 +5081,7 @@ const List<Country> countries = [
       "yue": "阿曼"
     },
     flag: "🇴🇲",
-    codeIso: "OM",
+    isoCode: "OM",
     dialCode: "968",
     minLength: 8,
     maxLength: 8,
@@ -5112,7 +5112,7 @@ const List<Country> countries = [
       "yue": "巴基斯坦"
     },
     flag: "🇵🇰",
-    codeIso: "PK",
+    isoCode: "PK",
     dialCode: "92",
     minLength: 10,
     maxLength: 10,
@@ -5143,7 +5143,7 @@ const List<Country> countries = [
       "yue": "帕劳"
     },
     flag: "🇵🇼",
-    codeIso: "PW",
+    isoCode: "PW",
     dialCode: "680",
     minLength: 7,
     maxLength: 7,
@@ -5174,7 +5174,7 @@ const List<Country> countries = [
       "yue": "巴勒斯坦，国"
     },
     flag: "🇵🇸",
-    codeIso: "PS",
+    isoCode: "PS",
     dialCode: "970",
     minLength: 9,
     maxLength: 9,
@@ -5205,7 +5205,7 @@ const List<Country> countries = [
       "yue": "巴拿馬"
     },
     flag: "🇵🇦",
-    codeIso: "PA",
+    isoCode: "PA",
     dialCode: "507",
     minLength: 8,
     maxLength: 8,
@@ -5236,7 +5236,7 @@ const List<Country> countries = [
       "yue": "巴布亚新几内亚"
     },
     flag: "🇵🇬",
-    codeIso: "PG",
+    isoCode: "PG",
     dialCode: "675",
     minLength: 11,
     maxLength: 11,
@@ -5267,7 +5267,7 @@ const List<Country> countries = [
       "yue": "巴拉圭"
     },
     flag: "🇵🇾",
-    codeIso: "PY",
+    isoCode: "PY",
     dialCode: "595",
     minLength: 10,
     maxLength: 10,
@@ -5298,7 +5298,7 @@ const List<Country> countries = [
       "yue": "秘魯"
     },
     flag: "🇵🇪",
-    codeIso: "PE",
+    isoCode: "PE",
     dialCode: "51",
     minLength: 9,
     maxLength: 9,
@@ -5329,7 +5329,7 @@ const List<Country> countries = [
       "yue": "菲律賓"
     },
     flag: "🇵🇭",
-    codeIso: "PH",
+    isoCode: "PH",
     dialCode: "63",
     minLength: 10,
     maxLength: 10,
@@ -5360,7 +5360,7 @@ const List<Country> countries = [
       "yue": "皮特凱恩"
     },
     flag: "🇵🇳",
-    codeIso: "PN",
+    isoCode: "PN",
     dialCode: "64",
     minLength: 10,
     maxLength: 10,
@@ -5391,7 +5391,7 @@ const List<Country> countries = [
       "yue": "波蘭"
     },
     flag: "🇵🇱",
-    codeIso: "PL",
+    isoCode: "PL",
     dialCode: "48",
     minLength: 9,
     maxLength: 9,
@@ -5422,7 +5422,7 @@ const List<Country> countries = [
       "yue": "葡萄牙"
     },
     flag: "🇵🇹",
-    codeIso: "PT",
+    isoCode: "PT",
     dialCode: "351",
     minLength: 9,
     maxLength: 9,
@@ -5453,7 +5453,7 @@ const List<Country> countries = [
       "yue": "波多黎各"
     },
     flag: "🇵🇷",
-    codeIso: "PR",
+    isoCode: "PR",
     dialCode: "1939",
     minLength: 15,
     maxLength: 15,
@@ -5484,7 +5484,7 @@ const List<Country> countries = [
       "yue": "卡塔爾"
     },
     flag: "🇶🇦",
-    codeIso: "QA",
+    isoCode: "QA",
     dialCode: "974",
     minLength: 8,
     maxLength: 8,
@@ -5515,7 +5515,7 @@ const List<Country> countries = [
       "yue": "羅馬尼亞"
     },
     flag: "🇷🇴",
-    codeIso: "RO",
+    isoCode: "RO",
     dialCode: "40",
     minLength: 9,
     maxLength: 9,
@@ -5546,7 +5546,7 @@ const List<Country> countries = [
       "yue": "俄儸斯聯邦"
     },
     flag: "🇷🇺",
-    codeIso: "RU",
+    isoCode: "RU",
     dialCode: "7",
     minLength: 10,
     maxLength: 10,
@@ -5577,7 +5577,7 @@ const List<Country> countries = [
       "yue": "盧旺達"
     },
     flag: "🇷🇼",
-    codeIso: "RW",
+    isoCode: "RW",
     dialCode: "250",
     minLength: 9,
     maxLength: 9,
@@ -5608,7 +5608,7 @@ const List<Country> countries = [
       "yue": "留尼汪"
     },
     flag: "🇷🇪",
-    codeIso: "RE",
+    isoCode: "RE",
     dialCode: "262",
     minLength: 9,
     maxLength: 9,
@@ -5639,7 +5639,7 @@ const List<Country> countries = [
       "yue": "聖巴泰勒米"
     },
     flag: "🇧🇱",
-    codeIso: "BL",
+    isoCode: "BL",
     dialCode: "590",
     minLength: 9,
     maxLength: 9,
@@ -5670,7 +5670,7 @@ const List<Country> countries = [
       "yue": "圣赫勒拿、阿森松同特里斯坦·达库尼亚"
     },
     flag: "🇸🇭",
-    codeIso: "SH",
+    isoCode: "SH",
     dialCode: "290",
     minLength: 4,
     maxLength: 4,
@@ -5701,7 +5701,7 @@ const List<Country> countries = [
       "yue": "圣基茨同尼维斯"
     },
     flag: "🇰🇳",
-    codeIso: "KN",
+    isoCode: "KN",
     dialCode: "1869",
     minLength: 7,
     maxLength: 7,
@@ -5732,7 +5732,7 @@ const List<Country> countries = [
       "yue": "聖盧西亞"
     },
     flag: "🇱🇨",
-    codeIso: "LC",
+    isoCode: "LC",
     dialCode: "1758",
     minLength: 7,
     maxLength: 7,
@@ -5763,7 +5763,7 @@ const List<Country> countries = [
       "yue": "聖馬丁（法國部分）"
     },
     flag: "🇲🇫",
-    codeIso: "MF",
+    isoCode: "MF",
     dialCode: "590",
     minLength: 9,
     maxLength: 9,
@@ -5794,7 +5794,7 @@ const List<Country> countries = [
       "yue": "聖皮埃尔同米克隆"
     },
     flag: "🇵🇲",
-    codeIso: "PM",
+    isoCode: "PM",
     dialCode: "508",
     minLength: 6,
     maxLength: 6,
@@ -5825,7 +5825,7 @@ const List<Country> countries = [
       "yue": "聖文森特同格林纳丁斯"
     },
     flag: "🇻🇨",
-    codeIso: "VC",
+    isoCode: "VC",
     dialCode: "1784",
     minLength: 7,
     maxLength: 7,
@@ -5856,7 +5856,7 @@ const List<Country> countries = [
       "yue": "薩摩亞"
     },
     flag: "🇼🇸",
-    codeIso: "WS",
+    isoCode: "WS",
     dialCode: "685",
     minLength: 7,
     maxLength: 7,
@@ -5887,7 +5887,7 @@ const List<Country> countries = [
       "yue": "聖馬力諾"
     },
     flag: "🇸🇲",
-    codeIso: "SM",
+    isoCode: "SM",
     dialCode: "378",
     minLength: 10,
     maxLength: 10,
@@ -5918,7 +5918,7 @@ const List<Country> countries = [
       "yue": "聖多美和普林西比"
     },
     flag: "🇸🇹",
-    codeIso: "ST",
+    isoCode: "ST",
     dialCode: "239",
     minLength: 7,
     maxLength: 7,
@@ -5949,7 +5949,7 @@ const List<Country> countries = [
       "yue": "沙地阿拉伯"
     },
     flag: "🇸🇦",
-    codeIso: "SA",
+    isoCode: "SA",
     dialCode: "966",
     minLength: 9,
     maxLength: 9,
@@ -5980,7 +5980,7 @@ const List<Country> countries = [
       "yue": "塞內加爾"
     },
     flag: "🇸🇳",
-    codeIso: "SN",
+    isoCode: "SN",
     dialCode: "221",
     minLength: 9,
     maxLength: 9,
@@ -6011,7 +6011,7 @@ const List<Country> countries = [
       "yue": "塞爾維亞"
     },
     flag: "🇷🇸",
-    codeIso: "RS",
+    isoCode: "RS",
     dialCode: "381",
     minLength: 12,
     maxLength: 12,
@@ -6042,7 +6042,7 @@ const List<Country> countries = [
       "yue": "塞舌爾"
     },
     flag: "🇸🇨",
-    codeIso: "SC",
+    isoCode: "SC",
     dialCode: "248",
     minLength: 6,
     maxLength: 6,
@@ -6073,7 +6073,7 @@ const List<Country> countries = [
       "yue": "塞拉利昂"
     },
     flag: "🇸🇱",
-    codeIso: "SL",
+    isoCode: "SL",
     dialCode: "232",
     minLength: 8,
     maxLength: 8,
@@ -6104,7 +6104,7 @@ const List<Country> countries = [
       "yue": "星架坡"
     },
     flag: "🇸🇬",
-    codeIso: "SG",
+    isoCode: "SG",
     dialCode: "65",
     minLength: 8,
     maxLength: 8,
@@ -6135,7 +6135,7 @@ const List<Country> countries = [
       "yue": "斯洛伐克"
     },
     flag: "🇸🇰",
-    codeIso: "SK",
+    isoCode: "SK",
     dialCode: "421",
     minLength: 9,
     maxLength: 9,
@@ -6166,7 +6166,7 @@ const List<Country> countries = [
       "yue": "斯洛文尼亞"
     },
     flag: "🇸🇮",
-    codeIso: "SI",
+    isoCode: "SI",
     dialCode: "386",
     minLength: 8,
     maxLength: 8,
@@ -6197,7 +6197,7 @@ const List<Country> countries = [
       "yue": "所羅門群島"
     },
     flag: "🇸🇧",
-    codeIso: "SB",
+    isoCode: "SB",
     dialCode: "677",
     minLength: 5,
     maxLength: 5,
@@ -6228,7 +6228,7 @@ const List<Country> countries = [
       "yue": "索馬里"
     },
     flag: "🇸🇴",
-    codeIso: "SO",
+    isoCode: "SO",
     dialCode: "252",
     minLength: 8,
     maxLength: 8,
@@ -6259,7 +6259,7 @@ const List<Country> countries = [
       "yue": "南非"
     },
     flag: "🇿🇦",
-    codeIso: "ZA",
+    isoCode: "ZA",
     dialCode: "27",
     minLength: 9,
     maxLength: 9,
@@ -6290,7 +6290,7 @@ const List<Country> countries = [
       "yue": "南蘇丹"
     },
     flag: "🇸🇸",
-    codeIso: "SS",
+    isoCode: "SS",
     dialCode: "211",
     minLength: 9,
     maxLength: 9,
@@ -6321,7 +6321,7 @@ const List<Country> countries = [
       "yue": "南喬治亞州同南桑威奇群島"
     },
     flag: "🇬🇸",
-    codeIso: "GS",
+    isoCode: "GS",
     dialCode: "500",
     minLength: 15,
     maxLength: 15,
@@ -6352,7 +6352,7 @@ const List<Country> countries = [
       "yue": "西班牙"
     },
     flag: "🇪🇸",
-    codeIso: "ES",
+    isoCode: "ES",
     dialCode: "34",
     minLength: 9,
     maxLength: 9,
@@ -6383,7 +6383,7 @@ const List<Country> countries = [
       "yue": "斯里蘭卡"
     },
     flag: "🇱🇰",
-    codeIso: "LK",
+    isoCode: "LK",
     dialCode: "94",
     minLength: 9,
     maxLength: 9,
@@ -6414,7 +6414,7 @@ const List<Country> countries = [
       "yue": "蘇丹"
     },
     flag: "🇸🇩",
-    codeIso: "SD",
+    isoCode: "SD",
     dialCode: "249",
     minLength: 9,
     maxLength: 9,
@@ -6445,7 +6445,7 @@ const List<Country> countries = [
       "yue": "蘇里南"
     },
     flag: "🇸🇷",
-    codeIso: "SR",
+    isoCode: "SR",
     dialCode: "597",
     minLength: 7,
     maxLength: 7,
@@ -6476,7 +6476,7 @@ const List<Country> countries = [
       "yue": "斯瓦尔巴德同扬·马延"
     },
     flag: "🇸🇯",
-    codeIso: "SJ",
+    isoCode: "SJ",
     dialCode: "47",
     minLength: 8,
     maxLength: 8,
@@ -6507,7 +6507,7 @@ const List<Country> countries = [
       "yue": "斯威士蘭"
     },
     flag: "🇸🇿",
-    codeIso: "SZ",
+    isoCode: "SZ",
     dialCode: "268",
     minLength: 8,
     maxLength: 8,
@@ -6538,7 +6538,7 @@ const List<Country> countries = [
       "yue": "瑞典"
     },
     flag: "🇸🇪",
-    codeIso: "SE",
+    isoCode: "SE",
     dialCode: "46",
     minLength: 7,
     maxLength: 13,
@@ -6569,7 +6569,7 @@ const List<Country> countries = [
       "yue": "瑞士"
     },
     flag: "🇨🇭",
-    codeIso: "CH",
+    isoCode: "CH",
     dialCode: "41",
     minLength: 9,
     maxLength: 12,
@@ -6600,7 +6600,7 @@ const List<Country> countries = [
       "yue": "阿拉伯敘利亞共和國"
     },
     flag: "🇸🇾",
-    codeIso: "SY",
+    isoCode: "SY",
     dialCode: "963",
     minLength: 10,
     maxLength: 10,
@@ -6631,7 +6631,7 @@ const List<Country> countries = [
       "yue": "台灣"
     },
     flag: "🇹🇼",
-    codeIso: "TW",
+    isoCode: "TW",
     dialCode: "886",
     minLength: 9,
     maxLength: 9,
@@ -6662,7 +6662,7 @@ const List<Country> countries = [
       "yue": "塔吉克斯坦"
     },
     flag: "🇹🇯",
-    codeIso: "TJ",
+    isoCode: "TJ",
     dialCode: "992",
     minLength: 9,
     maxLength: 9,
@@ -6693,7 +6693,7 @@ const List<Country> countries = [
       "yue": "坦桑尼亞，聯合共和國"
     },
     flag: "🇹🇿",
-    codeIso: "TZ",
+    isoCode: "TZ",
     dialCode: "255",
     minLength: 9,
     maxLength: 9,
@@ -6724,7 +6724,7 @@ const List<Country> countries = [
       "yue": "泰國"
     },
     flag: "🇹🇭",
-    codeIso: "TH",
+    isoCode: "TH",
     dialCode: "66",
     minLength: 9,
     maxLength: 9,
@@ -6755,7 +6755,7 @@ const List<Country> countries = [
       "yue": "東帝汶"
     },
     flag: "🇹🇱",
-    codeIso: "TL",
+    isoCode: "TL",
     dialCode: "670",
     minLength: 7,
     maxLength: 7,
@@ -6786,7 +6786,7 @@ const List<Country> countries = [
       "yue": "多哥"
     },
     flag: "🇹🇬",
-    codeIso: "TG",
+    isoCode: "TG",
     dialCode: "228",
     minLength: 8,
     maxLength: 8,
@@ -6817,7 +6817,7 @@ const List<Country> countries = [
       "yue": "托克劳"
     },
     flag: "🇹🇰",
-    codeIso: "TK",
+    isoCode: "TK",
     dialCode: "690",
     minLength: 4,
     maxLength: 4,
@@ -6848,7 +6848,7 @@ const List<Country> countries = [
       "yue": "湯加"
     },
     flag: "🇹🇴",
-    codeIso: "TO",
+    isoCode: "TO",
     dialCode: "676",
     minLength: 7,
     maxLength: 7,
@@ -6879,7 +6879,7 @@ const List<Country> countries = [
       "yue": "特立尼達和多巴哥"
     },
     flag: "🇹🇹",
-    codeIso: "TT",
+    isoCode: "TT",
     dialCode: "1868",
     minLength: 7,
     maxLength: 7,
@@ -6910,7 +6910,7 @@ const List<Country> countries = [
       "yue": "突尼斯"
     },
     flag: "🇹🇳",
-    codeIso: "TN",
+    isoCode: "TN",
     dialCode: "216",
     minLength: 8,
     maxLength: 8,
@@ -6941,7 +6941,7 @@ const List<Country> countries = [
       "yue": "土耳其"
     },
     flag: "🇹🇷",
-    codeIso: "TR",
+    isoCode: "TR",
     dialCode: "90",
     minLength: 10,
     maxLength: 10,
@@ -6972,7 +6972,7 @@ const List<Country> countries = [
       "yue": "土庫曼斯坦"
     },
     flag: "🇹🇲",
-    codeIso: "TM",
+    isoCode: "TM",
     dialCode: "993",
     minLength: 8,
     maxLength: 8,
@@ -7003,7 +7003,7 @@ const List<Country> countries = [
       "yue": "特克斯同凯科斯群岛"
     },
     flag: "🇹🇨",
-    codeIso: "TC",
+    isoCode: "TC",
     dialCode: "1649",
     minLength: 7,
     maxLength: 7,
@@ -7034,7 +7034,7 @@ const List<Country> countries = [
       "yue": "圖瓦盧"
     },
     flag: "🇹🇻",
-    codeIso: "TV",
+    isoCode: "TV",
     dialCode: "688",
     minLength: 6,
     maxLength: 6,
@@ -7065,7 +7065,7 @@ const List<Country> countries = [
       "yue": "烏干達"
     },
     flag: "🇺🇬",
-    codeIso: "UG",
+    isoCode: "UG",
     dialCode: "256",
     minLength: 9,
     maxLength: 9,
@@ -7096,7 +7096,7 @@ const List<Country> countries = [
       "yue": "烏克蘭"
     },
     flag: "🇺🇦",
-    codeIso: "UA",
+    isoCode: "UA",
     dialCode: "380",
     minLength: 9,
     maxLength: 9,
@@ -7127,7 +7127,7 @@ const List<Country> countries = [
       "yue": "阿拉伯聯合酋長國"
     },
     flag: "🇦🇪",
-    codeIso: "AE",
+    isoCode: "AE",
     dialCode: "971",
     minLength: 9,
     maxLength: 9,
@@ -7158,7 +7158,7 @@ const List<Country> countries = [
       "yue": "大不列顛及北愛爾蘭聯合王國"
     },
     flag: "🇬🇧",
-    codeIso: "GB",
+    isoCode: "GB",
     dialCode: "44",
     minLength: 10,
     maxLength: 10,
@@ -7189,7 +7189,7 @@ const List<Country> countries = [
       "yue": "美利堅郃眾囯"
     },
     flag: "🇺🇸",
-    codeIso: "US",
+    isoCode: "US",
     dialCode: "1",
     minLength: 10,
     maxLength: 10,
@@ -7220,7 +7220,7 @@ const List<Country> countries = [
       "yue": "烏拉圭"
     },
     flag: "🇺🇾",
-    codeIso: "UY",
+    isoCode: "UY",
     dialCode: "598",
     minLength: 9,
     maxLength: 9,
@@ -7251,7 +7251,7 @@ const List<Country> countries = [
       "yue": "月即別"
     },
     flag: "🇺🇿",
-    codeIso: "UZ",
+    isoCode: "UZ",
     dialCode: "998",
     minLength: 9,
     maxLength: 9,
@@ -7282,7 +7282,7 @@ const List<Country> countries = [
       "yue": "瓦努阿圖"
     },
     flag: "🇻🇺",
-    codeIso: "VU",
+    isoCode: "VU",
     dialCode: "678",
     minLength: 7,
     maxLength: 7,
@@ -7313,7 +7313,7 @@ const List<Country> countries = [
       "yue": "委內瑞拉（玻利瓦爾共和國）"
     },
     flag: "🇻🇪",
-    codeIso: "VE",
+    isoCode: "VE",
     dialCode: "58",
     minLength: 10,
     maxLength: 10,
@@ -7344,7 +7344,7 @@ const List<Country> countries = [
       "yue": "越南"
     },
     flag: "🇻🇳",
-    codeIso: "VN",
+    isoCode: "VN",
     dialCode: "84",
     minLength: 11,
     maxLength: 11,
@@ -7375,7 +7375,7 @@ const List<Country> countries = [
       "yue": "維爾京群島（英國）"
     },
     flag: "🇻🇬",
-    codeIso: "VG",
+    isoCode: "VG",
     dialCode: "1284",
     minLength: 7,
     maxLength: 7,
@@ -7406,7 +7406,7 @@ const List<Country> countries = [
       "yue": "維爾京群島（美國）"
     },
     flag: "🇻🇮",
-    codeIso: "VI",
+    isoCode: "VI",
     dialCode: "1340",
     minLength: 7,
     maxLength: 7,
@@ -7437,7 +7437,7 @@ const List<Country> countries = [
       "yue": "瓦利斯同富图纳"
     },
     flag: "🇼🇫",
-    codeIso: "WF",
+    isoCode: "WF",
     dialCode: "681",
     minLength: 6,
     maxLength: 6,
@@ -7468,7 +7468,7 @@ const List<Country> countries = [
       "yue": "也門"
     },
     flag: "🇾🇪",
-    codeIso: "YE",
+    isoCode: "YE",
     dialCode: "967",
     minLength: 9,
     maxLength: 9,
@@ -7499,7 +7499,7 @@ const List<Country> countries = [
       "yue": "贊比亞"
     },
     flag: "🇿🇲",
-    codeIso: "ZM",
+    isoCode: "ZM",
     dialCode: "260",
     minLength: 9,
     maxLength: 9,
@@ -7530,7 +7530,7 @@ const List<Country> countries = [
         "yue": "津巴布韋"
       },
       flag: "🇿🇼",
-      codeIso: "ZW",
+      isoCode: "ZW",
       dialCode: "263",
       minLength: 9,
       maxLength: 9)
@@ -7540,7 +7540,7 @@ class Country {
   final String name;
   final Map<String, String> nameTranslations;
   final String flag;
-  final String codeIso;
+  final String isoCode;
   final String dialCode;
   final String regionCode;
   final int minLength;
@@ -7549,7 +7549,7 @@ class Country {
   const Country({
     required this.name,
     required this.flag,
-    required this.codeIso,
+    required this.isoCode,
     required this.dialCode,
     required this.nameTranslations,
     required this.minLength,
