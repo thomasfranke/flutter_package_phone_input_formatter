@@ -17,16 +17,16 @@ class PhoneInput extends StatefulWidget {
   const PhoneInput({
     super.key,
     required this.initialCountryCode,
-    this.languageCode = 'en',
-    this.disableAutoFillHints = false,
-    this.initialValue,
     required this.onChanged,
     required this.onCountryChanged,
-    this.enabled = true,
-    this.cursorColor = Colors.white,
-    this.invalidNumberMessage = 'Invalid Mobile Number',
-    this.countryPicker,
     required this.uniqueKey,
+    this.countryPicker,
+    this.cursorColor = Colors.white,
+    this.disableAutoFillHints = false,
+    this.enabled = true,
+    this.initialValue,
+    this.invalidNumberMessage = 'Invalid Mobile Number',
+    this.languageCode = 'en',
   });
 
   @override
