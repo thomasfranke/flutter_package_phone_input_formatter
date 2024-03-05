@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bounceable/flutter_bounceable.dart';
 import '/exports.dart';
 
 class PhoneInput extends StatefulWidget {
@@ -13,10 +14,12 @@ class PhoneInput extends StatefulWidget {
   final Color cursorColor;
   final CountryPicker? countryPicker;
   final bool disableAutoFillHints;
+  final String labelText;
 
   const PhoneInput({
     super.key,
     required this.initialCountryCode,
+    required this.labelText,
     required this.onChanged,
     required this.onCountryChanged,
     required this.uniqueKey,
@@ -72,7 +75,7 @@ class _PhoneInputState extends State<PhoneInput> {
         keyboardType: TextInputType.phone,
         style: const TextStyle(color: Colors.white, fontSize: 16),
         decoration: InputDecoration(
-          labelText: "Phone Number",
+          labelText: widget.labelText,
           labelStyle: const TextStyle(color: Colors.white, fontSize: 14),
           disabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8.0),
@@ -120,26 +123,34 @@ class _PhoneInputState extends State<PhoneInput> {
     if (mounted) setState(() {});
   }
 
-  InkWell _prefixFlagsButton() {
+  Widget _prefixFlagsButton() {
     // This updates thorugh block. Otherwise doens't update the Widget that actually changed the country.
     if (!widget.enabled) _selectedCountry = countries.firstWhere((item) => item.isoCode == (widget.initialCountryCode), orElse: () => countries.first);
 
-    return InkWell(
+    return Bounceable(
       onTap: widget.enabled ? _changeCountry : null,
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const SizedBox(width: 16),
-          // if (widget.enabled && widget.showDropdownIcon && widget.dropdownIconPosition == IconPosition.leading) ...[Icon(Icons.arrow_drop_down, color: Colors.white), const SizedBox(width: 4)],
-          Text(_selectedCountry.flag, style: const TextStyle(fontSize: 25)),
-          const SizedBox(width: 8),
-          // FittedBox(child: Text('+${_selectedCountry.dialCode}', style: widget.dropdownTextStyle)),
-          // if (widget.enabled && widget.showDropdownIcon && widget.dropdownIconPosition == IconPosition.trailing) ...[
-          // const SizedBox(width: 4),
-          // widget.dropdownIcon, ],
-          const SizedBox(width: 8),
-        ],
+      child: Container(
+        margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 2.0, bottom: 2.0),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8.0),
+          color: Colors.red.withOpacity(0.2),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const SizedBox(width: 10),
+            // if (widget.enabled && widget.showDropdownIcon && widget.dropdownIconPosition == IconPosition.leading) ...[Icon(Icons.arrow_drop_down, color: Colors.white), const SizedBox(width: 4)],
+            Text(_selectedCountry.flag, style: const TextStyle(fontSize: 25)),
+            const SizedBox(width: 8),
+            FittedBox(child: Text('+${_selectedCountry.dialCode}', style: TextStyle(color: Colors.white.withOpacity(0.8), fontSize: 16))),
+            // FittedBox(child: Text('+${_selectedCountry.dialCode}', style: widget.dropdownTextStyle)),
+            // if (widget.enabled && widget.showDropdownIcon && widget.dropdownIconPosition == IconPosition.trailing) ...[
+            // const SizedBox(width: 4),
+            // widget.dropdownIcon, ],
+            const SizedBox(width: 10),
+          ],
+        ),
       ),
     );
   }
