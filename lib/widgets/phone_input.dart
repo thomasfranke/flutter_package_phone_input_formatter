@@ -100,7 +100,6 @@ class _PhoneInputState extends State<PhoneInput> {
   }
 
   Future<void> _changeCountry() async {
-    // filteredCountries = _countryList;
     await showDialog(
       context: context,
       useRootNavigator: false,
@@ -124,13 +123,12 @@ class _PhoneInputState extends State<PhoneInput> {
   }
 
   Widget _prefixFlagsButton() {
-    // This updates thorugh block. Otherwise doens't update the Widget that actually changed the country.
     if (!widget.enabled) _selectedCountry = countries.firstWhere((item) => item.isoCode == (widget.initialCountryCode), orElse: () => countries.first);
 
     return Bounceable(
       onTap: widget.enabled ? _changeCountry : null,
       child: Container(
-        margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 2.0, bottom: 2.0),
+        margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 4.0, bottom: 4.0),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8.0),
           color: Colors.red.withOpacity(0.2),
@@ -140,14 +138,9 @@ class _PhoneInputState extends State<PhoneInput> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const SizedBox(width: 10),
-            // if (widget.enabled && widget.showDropdownIcon && widget.dropdownIconPosition == IconPosition.leading) ...[Icon(Icons.arrow_drop_down, color: Colors.white), const SizedBox(width: 4)],
             Text(_selectedCountry.flag, style: const TextStyle(fontSize: 25)),
-            const SizedBox(width: 8),
+            const SizedBox(width: 5),
             FittedBox(child: Text('+${_selectedCountry.dialCode}', style: TextStyle(color: Colors.white.withOpacity(0.8), fontSize: 16))),
-            // FittedBox(child: Text('+${_selectedCountry.dialCode}', style: widget.dropdownTextStyle)),
-            // if (widget.enabled && widget.showDropdownIcon && widget.dropdownIconPosition == IconPosition.trailing) ...[
-            // const SizedBox(width: 4),
-            // widget.dropdownIcon, ],
             const SizedBox(width: 10),
           ],
         ),
