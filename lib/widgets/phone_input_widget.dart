@@ -3,7 +3,6 @@ import 'package:flutter_bounceable/flutter_bounceable.dart';
 import '/exports.dart';
 
 class PhoneInput extends StatefulWidget {
-  final Key uniqueKey;
   final ValueChanged<PhoneNumberModel> onChanged;
   final ValueChanged<Country> onCountryChanged;
   final bool enabled;
@@ -22,7 +21,6 @@ class PhoneInput extends StatefulWidget {
     required this.labelText,
     required this.onChanged,
     required this.onCountryChanged,
-    required this.uniqueKey,
     this.countryPicker,
     this.cursorColor = Colors.white,
     this.disableAutoFillHints = false,
@@ -62,7 +60,7 @@ class _PhoneInputState extends State<PhoneInput> {
     return Padding(
       padding: const EdgeInsets.all(10.0),
       child: TextFormField(
-        key: widget.uniqueKey,
+        key: widget.key,
         initialValue: widget.initialValue ?? '',
         autofillHints: widget.disableAutoFillHints ? null : [AutofillHints.telephoneNumberNational],
         onChanged: (value) {
